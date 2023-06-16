@@ -24,6 +24,7 @@ GO_STATIC_PACKAGES = $(GO_PROJECT)/cmd/angryjet
 GO_LDFLAGS += -X $(GO_PROJECT)/pkg/version.Version=$(VERSION)
 GO_SUBDIRS += cmd internal
 GO111MODULE = on
+GO_REQUIRED_VERSION := 1.20
 -include build/makelib/golang.mk
 
 # We want submodules to be set up the first time `make` is run.
